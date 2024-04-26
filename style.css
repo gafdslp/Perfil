@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #329154 1.62%, #000000 98.61%);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px 24px 24px 0px;
+  
+}
+.logo-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.logo-home a {
+  transition: transform 0.5s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.logo-home:hover  {
+  transform: scale(0.7); /* Diminui o tamanho em 10% quando o mouse está sobre o elemento */
+}
+
+.logo-home:hover a {
+  opacity: 0%; /* Torna o elemento <a> invisível quando o mouse está sobre o elemento .logo-home */
+  transform: scale(2.9)
+}
+
+
+.cabecalho-imagem {
+  height: 100px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px
+}
+
+.cabecalho-menu .sobre {
+  transition: transform 0.3s ease;
+}
+
+.cabecalho-menu .sobre:hover {
+  transform: scale(1.2);
+  color: #58dd63;
+}
+
+.cabecalho-menu .experiencia {
+  transition: transform 0.3s ease;
+}
+
+.cabecalho-menu .experiencia:hover {
+  transform: scale(1.2);
+  color: #58dd63;
+}
+
+.cabecalho-menu .educação {
+  transition: transform 0.3s ease;
+}
+
+.cabecalho-menu .educação:hover {
+  transform: scale(1.2);
+  color: #58dd63;
+}
+
+.cabecalho-menu .contato {
+  transition: transform 0.3s ease;
+}
+
+.cabecalho-menu .contato:hover {
+  transform: scale(1.2);
+  color: #58dd63;
+}
+
+
+
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color:  #FFF2E7;
+}
+
+.conteudo-principal-escrito .cargo .span-Totvs{
+  font-size: 20px;
+  color: #FFF2E7;
+}
+
+
+.conteudo-principal-escrito .cargo .span-juritis{
+  font-size: 20px;
+  color: #161616;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ECD6C4;
+}
+
+
+.conteudo-principal-escrito-botao {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+}
+
+  
+
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+  transition: transform 0.7s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.conteudo-principal-imagem:hover {
+ 
+  transform: scale(0.98)
+}
+
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+}
+
+.conteudo-profissional{
+  display: none;
+}
+
+.rodape {
+  display: flex;
+  border-top: 0.4px solid #FFF2E7;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 32px;
+  
+}
+
+.links-sociais {
+  display: flex;
+  gap: 40px;
+  height: 32px;
+}
+
+.link-github {
+  transition: transform 0.3s ease;
+  height: 32px;
+}
+
+.link-github:hover {
+  transform: scale(1.5)
+}
+
+.link-linkedin {
+  transition: transform 0.3s ease;
+  height: 32px;
+}
+
+.link-linkedin:hover {
+  transform: scale(1.5)
+}
+
+.link-email {
+  transition: transform 0.3s ease;
+  height: 32px;
+}
+
+.link-email:hover {
+  transform: scale(1.5)
+}
+
+.link-instagram {
+  transition: transform 0.3s ease;
+  height: 32px;
+}
+
+.link-instagram:hover {
+  transform: scale(1.5)
+}
+
+.link-whatsapp {
+  transition: transform 0.3s ease;
+  height: 32px;
+}
+
+.link-whatsapp:hover {
+  transform: scale(1.5)
+}
+
+
+.rodape-logo {
+  height: 48px;
+  display: block;
+  transition: transform 0.3s ease;
+
+}
+
+.rodape-logo:hover {
+  transform: scale(0.9)
+}
