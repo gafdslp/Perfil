@@ -17,19 +17,29 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 24px 24px 24px 0px;
+  padding: 15px 24px 15px 0px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90.15deg, #329153fa 1.62%, #000000f1 98.61%); /* Adicione um fundo semi-transparente para melhorar a legibilidade */
+  z-index: 1000; /* Garante que o cabeçalho esteja na parte superior */
   
 }
 .logo-home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 5px;
+  cursor: pointer;
   transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
 }
 
 .logo-home a {
-  transition: transform 0.5s ease; /* Adiciona uma transição suave de 0.3 segundos */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+  
 }
 
 .logo-home:hover  {
@@ -38,17 +48,25 @@ body {
 
 .logo-home:hover a {
   opacity: 0%; /* Torna o elemento <a> invisível quando o mouse está sobre o elemento .logo-home */
-  transform: scale(2.9)
+  transform: scale(1.9)
+}
+
+.cabecalho-home {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px
 }
 
 
 .cabecalho-imagem {
-  height: 100px;
+  height: 50px;
 }
 
 .cabecalho-menu {
   display: flex;
   gap: 32px;
+  cursor: pointer;
 }
 
 .cabecalho-menu-item {
@@ -85,6 +103,15 @@ body {
   color: #58dd63;
 }
 
+.cabecalho-menu .habilidades {
+  transition: transform 0.3s ease;
+}
+
+.cabecalho-menu .habilidades:hover {
+  transform: scale(1.2);
+  color: #58dd63;
+}
+
 .cabecalho-menu .contato {
   transition: transform 0.3s ease;
 }
@@ -94,12 +121,10 @@ body {
   color: #58dd63;
 }
 
-
-
-
 .conteudo {
+  margin-top: 80px;
   margin-bottom: 48px;
-  border-top: 0.4px solid #FFF2E7;
+  border-top: 0.4px solid #b7f5bc;
 }
 
 .conteudo-principal {
@@ -155,9 +180,6 @@ body {
   color: #2F2325;
 }
 
-  
-
-
 .conteudo-principal-escrito-botao:hover {
   background-color: rgba(236, 214, 196, 0.53);
 }
@@ -171,7 +193,6 @@ body {
  
   transform: scale(0.98)
 }
-
 
 .conteudo-secundario {
   display: flex;
@@ -198,7 +219,356 @@ body {
   color: #ECD6C4;
 }
 
-.conteudo-profissional{
+.section-carreira {
+  border-top: 0.4px solid #FFF2E7;
+  padding: 32px;
+}
+
+.section-educacao {
+  border-top: 0.4px solid #FFF2E7;
+  padding: 32px;
+}
+
+.section-habilidade {
+  border-top: 0.4px solid #FFF2E7;
+  padding: 32px;
+}
+
+.educacao-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color:  #FFF2E7;
+}
+
+.carreira-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color:  #FFF2E7;
+}
+.carreira-empresa  {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 48px;
+  margin-left: 55px;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.nome-empresa {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+}
+
+.cargo-empresa {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFF2EF;
+}
+
+.cargo-empresa strong {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6ae074;
+}
+
+.data-empresa {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFF2EF;
+}
+
+.data-empresa strong {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6ae074;
+}
+
+
+.img-empresa {
+  height: 32px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+
+}
+
+.descricao-empresa {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+}
+
+.img-empresa-seta-esquerda {
+  width: 650px;
+  filter: brightness(0) invert(100%);
+  margin-top: 50px;
+  margin-left: 100px;
+  transition: transform 0.7s ease;
+}
+
+.img-empresa-seta-esquerda:hover {
+  transform: scale(1.02)
+}
+
+.img-empresa-seta-direita {
+  width: 650px;
+  filter: brightness(0) invert(100%);
+  margin-top: 50px;
+  margin-right: 380px;
+  transition: transform 0.7s ease;
+}
+
+.img-empresa-seta-direita:hover {
+  transform: scale(1.02)
+}
+
+.nome-totvs {
+  display: none;
+}
+
+
+.empresa-pipoca {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 0;
+  margin-right: 80px;
+  padding-top: 0;
+}
+
+.empresa-IEBT {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 0;
+  margin-right: 80px;
+  padding-top: 0;
+}
+
+.itens-empresa{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo-totvs {
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-totvs:hover {
+  transform: scale(1.5)
+}
+
+
+
+.logo-pipoca {
+
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-pipoca:hover {
+  transform: scale(1.5)
+}
+
+.logo-synergia {
+
+  width: 140px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-synergia:hover {
+  transform: scale(1.5)
+}
+
+.logo-IEBT {
+
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-IEBT:hover {
+  transform: scale(1.5)
+}
+
+
+.descricao-pipoca {
+  word-wrap: break-word; /* Para navegadores mais antigos */
+  overflow-wrap: break-word; /* Para navegadores modernos */
+}
+
+.container-educacao-superior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.container-educacao-academy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.container-educacao-extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.instituicao-Educacao {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 48px;
+  margin-left: 55px;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.itens-educacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nome-instituicao-Educacao {
+
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFF2EF;
+}
+
+.img-instituicao-Educacao {
+  height: 32px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.curso-instituicao-Educacao {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFF2EF;
+}
+
+.curso-instituicao-Educacao strong {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6ae074;
+}
+
+.data-entrada-instituicao-Educacao {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFF2EF;
+}
+
+.data-saida-instituicao-Educacao {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFF2EF;
+}
+
+.data-instituicao-Educacao strong {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6ae074;
+}
+
+.descricao-instituicao-Educacao {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+}
+
+.logo-estacio {
+
+  width: 150px;
+  height: auto;
+}
+
+.logo-fadipa {
+
+  width: 150px;
+  height: auto;
+}
+
+.logo-raro {
+
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-prime {
+
+  width: 200px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.logo-qa {
+
+  width: 180px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.logo-bradesco {
+
+  width: 150px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.logo-udemy {
+
+  width: 130px;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.logo-mtc {
+
+  width: 160px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.section-habilidade {
   display: none;
 }
 
