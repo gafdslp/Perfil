@@ -50,7 +50,7 @@ experienciaLink.addEventListener('click', function(event) {
   event.preventDefault(); 
 
   window.scrollTo({
-    top: 2964,
+    top: 3243,
     behavior: 'smooth' 
   });
 });
